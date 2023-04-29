@@ -13,7 +13,7 @@ title: Vega Checkout
 description: >- # this means to ignore newlines until "baseurl:"
   Checkout de alta conversão para negócios digitais. Acesse grátis as ferramentas que você precisa para empreender na internet.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://abrcoutinho.github.io/landing-vega/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://abrcoutinho.github.io/landing-vega" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Import SASS partials from sass_dir
 sass:
