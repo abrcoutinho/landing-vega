@@ -1,0 +1,43 @@
+.features
+	width: 100%
+	max-width: $column-big-up
+	display: grid
+	grid-template-columns: 1fr 1fr
+	grid-template-rows: 900px
+	column-gap: 80px
+	margin: 0 auto
+
+	& > div
+		border-radius: 24px
+		background:
+			color: white
+			repeat: no-repeat
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12)
+		padding: 184px 80px 80px
+
+		&:first-child
+			background:
+				image: url("../img/pie-chart.svg"), url("../img/chart.svg")
+				position: 80px 80px, center 90%
+
+		&:last-child
+			background-color: $brand-secondary
+			color: white
+			background:
+				image: url("../img/teamwork.svg"), url("../img/drop.svg")
+				position: 80px 80px, 80px 88%
+
+	strong
+		font-size: 3rem
+		line-height: 120%
+		font-weight: 700
+		display: block
+		margin-bottom: 40px
+
+	p
+		font-size: 2rem
+		line-height: 160%
+		font-weight: 400
+
+	b
+		font-weight: 800

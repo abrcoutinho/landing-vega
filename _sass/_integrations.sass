@@ -1,0 +1,67 @@
+// Integrações
+
+.integrations
+	width: 100vw
+	padding: 150px 0
+	display: flex
+	flex-flow: column wrap
+	align-items: center
+
+	h2
+		width: 100%
+		max-width: $column-big-up
+		font-size: 4rem
+		line-height: 130%
+		margin-bottom: 64px
+
+	mark
+		@extend %gradient_type
+
+	.carousel
+		width: 100%
+		height: 220px
+		border-bottom: solid 1px #CCCED5
+		position: relative
+
+		&:first-of-type
+			border-top: solid 1px #CCCED5
+
+	h3
+		font-size: 3.5rem
+		text-transform: uppercase
+		letter-spacing: 4px
+		font-weight: 400
+		text-align: center
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+
+	.landing
+		width: 100%
+		min-height: 334px
+		max-width: $column-big-up
+		margin-top: 150px
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr
+		grid-template-rows: auto 
+		column-gap: 32px
+
+		background: url("../img/nova-loja.svg") no-repeat 0 center
+			size: auto 334px
+
+		strong
+			grid-column-start: 2
+			align-self: center
+			font-size: 2.5rem
+			font-weight: 700
+			line-height: 140%
+
+		p
+			grid-column-start: 3
+			align-self: center
+			font-size: 1.75rem
+			font-weight: 400
+			line-height: 140%
+

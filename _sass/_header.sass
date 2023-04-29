@@ -1,0 +1,90 @@
+
+// Header, big-desktop-up
+
+.vega > .header
+	display: flex
+	justify-content: center
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	z-index: 5
+	height: 200px
+	transition: top 0.5s $ease, background-color 0.5s $ease, height 0.5s $ease
+
+	&.scrolled
+		background-color: rgba($neutral_10, 98%)
+		// backdrop-filter: blur(100px)
+		height: 100px
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08)
+
+		.logo img
+			transform: scale(0.7) translateX(-40px)
+
+	.content
+		width: 100%
+		max-width: $column-big-up
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+	.logo
+		img
+			transition: transform 0.5s $ease
+
+	.menu
+		a
+			color: $brand-secondary
+			font-weight: bold
+			font-size: 1.25rem
+			position: relative
+			display: inline-block
+			margin: 0 2vw
+
+			&:hover
+				color: $brand-primary
+
+			&:not(:first-child)::before
+				content: ''
+				width: 4px
+				height: 4px
+				border-radius: 100%
+				background-color: $brand-secondary
+				position: absolute
+				top: 50%
+				left: -2.25vw
+				cursor: default
+
+			&.active
+				cursor: default
+				&:hover
+					color: $brand-secondary
+				&::after
+					content: ''
+					width: 40px
+					height: 2px
+					border-radius: 2px
+					background-color: $brand-secondary
+					position: absolute
+					bottom: -0.5rem
+					left: 50%
+					transform: translateX(-50%)
+
+	.sign-up
+		display: flex
+		gap: 20px
+		a
+			@extend %button
+
+			&:last-child
+				background-color: $brand-secondary
+				color: white
+				box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12)
+
+				&:hover
+					background-color: lighten($brand-secondary, 10%)
+
+
+	.menu-mobile-button
+		@extend %button
+		display: none

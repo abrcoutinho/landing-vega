@@ -1,0 +1,106 @@
+// Recursos do checkout
+
+.resources
+	width: 100vw
+	display: flex
+	justify-content: center
+
+	& > div
+		width: 100%
+		max-width: $column-big-up
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr
+		grid-template-rows: 630px  610px 340px
+		column-gap: 96px
+		row-gap: 96px
+
+	h1
+		font-size: 4rem
+		line-height: 130%
+		align-self: center
+
+	article
+		position: relative
+
+		$resource_list: res1 res2 res3 res4 res5 res6 res7 res8
+		@each $res_img in $resource_list
+			&.#{$res_img}::before
+				background-image: url(../img/resources/#{$res_img}.png)
+
+		@each $res_ico in $resource_list
+			&.#{$res_ico}::after
+				background-image: url(../img/resources/#{$res_ico}.svg)
+
+
+		&::before
+			content: ''
+			width: 100%
+			min-height: 220px
+			display: block
+			border-radius: 16px
+			background:
+				color: #e4e4e4
+				repeat: no-repeat
+				position: 50% 50%
+				size: cover
+
+
+		&::after
+			content: ''
+			width: 64px
+			height: 64px
+			border: solid 8px $neutral_10
+			border-radius: 64px
+			position: absolute
+			left: 40px
+			top: 170px
+			background:
+				color: white
+				repeat: no-repeat
+				position: left top
+				size: 100% auto
+
+
+		&:nth-of-type(4)
+			transform: translateY(-220px)
+			&::before
+				height: 445px
+				background:
+					size: 140% auto
+					position: 50% 50%
+			&::after
+				top: 390px
+
+		&:nth-of-type(5)
+			transform: translateY(-220px)
+			&::before
+				height: 290px
+			&::after
+				top: 240px
+
+		&:nth-of-type(6)
+			transform: translateY(-220px)
+
+		&:nth-of-type(7)
+			transform: translateY(-220px)
+
+		&:nth-of-type(8)
+			transform: translateY(-400px)
+
+			&::before
+				height: 400px
+			&::after
+				top: 345px
+
+
+	h2
+		padding: 40px 40px 24px
+		font-size: 1.75rem
+		line-height: 140%
+		color: $neutral_50
+		font-weight: 500
+
+		dfn
+			font-style: normal
+			font-weight: 800
+			color: $brand-secondary

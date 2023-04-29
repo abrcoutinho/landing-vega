@@ -1,0 +1,72 @@
+// Recuperação de vendas
+
+.sales-recovery
+	width: 100vw
+	color: $neutral_10
+	display: flex
+	justify-content: center
+	background-color: $neutral_80
+
+	& > div
+		width: 100%
+		max-width: $column-big-up
+		padding: 300px 0
+		display: flex
+		justify-content: space-between
+		background:
+			image: url("../img/interface.svg"), url("../img/office.svg")
+			position: 0 -50%, 0 bottom
+			repeat: no-repeat
+
+	.titles
+		flex: 0 1 30%
+
+		strong
+			font-size: 4rem
+			line-height: 130%
+			display: block
+			margin-bottom: 40px
+
+		mark
+			@extend %gradient_type
+
+		h1, p
+			font-size: 1.75rem
+			line-height: 160%
+			font-weight: 300
+			margin-bottom: 40px
+
+		b
+			font-weight: 800
+
+	.events
+		flex: 0 1 60%
+
+		small
+			display: block
+			font-size: 1.75rem
+			margin-bottom: 24px
+
+		.grid
+			display: grid
+			grid-template-columns: 1fr 1fr
+			grid-template-rows: auto auto 
+			column-gap: 64px
+			row-gap: 64px
+
+		dl
+			padding: 40px
+			background-color: $neutral_90
+			border-radius: 16px
+			border: solid 2px $neutral_80
+
+		dt
+			font-size: 2.5rem
+			line-height: 140%
+			font-weight: 700
+			margin-bottom: 24px
+
+		dd
+			font-size: 1.75rem
+			line-height: 140%
+			font-weight: 300

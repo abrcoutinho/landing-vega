@@ -1,0 +1,72 @@
+// Newsletter
+
+.newsletter
+	width: 100vw
+	max-width: $column-big-up
+	margin: 0 auto 100px
+
+	form
+		width: 100%
+		max-width: calc($column-big-up - 20.4%)
+		margin: 0 auto
+		background: #CCCED5 url("../img/newsletter.svg") no-repeat right 30%
+		border-radius: 24px
+		box-sizing: border-box
+		padding: 56px 100px
+		display: flex
+		align-items: center
+		gap: 32px
+
+	fieldset
+		flex: 1 1 0
+
+	strong
+		font-size: 3rem
+		line-height: 140%
+		display: block
+
+	.mail
+		height: 72px
+		margin: 24px 0 16px
+		border-radius: 8px
+		overflow: hidden
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12)
+		display: flex
+
+		input[type="email"]
+			height: 100%
+			border: none
+			padding: 0 16px 0 84px
+			font-size: 1.25rem
+			background: white url("../img/email.svg") no-repeat 28px center
+			flex: 1 1 auto
+			border-radius: 8px 0 0 8px
+
+			@extend %input_focus
+		
+		input[type="submit"]
+			@extend %button
+			width: 96px
+			height: 100%
+			border-radius: 0
+			background: white url("../img/arrow-left.svg") no-repeat center center
+			border: none
+			transition: background-position 0.5s $ease
+			cursor: pointer
+
+			&:hover
+				background-position: 60% center
+
+	small
+		display: block
+		font-size: 0.9rem
+
+		a
+			color: $brand-secondary
+			text-decoration: underline
+
+	p
+		font-size: 1.5rem
+		line-height: 160%
+		padding: 0 20%
+

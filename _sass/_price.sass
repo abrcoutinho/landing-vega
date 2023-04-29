@@ -1,0 +1,215 @@
+// Preços
+
+.price
+	width: 100vw
+	display: flex
+	flex-flow: column wrap
+	align-items: center
+	padding-top: 230px
+
+	.titles
+		width: 100%
+		max-width: $column-big-up
+		display: flex
+		gap: 32px
+		
+		h1
+			flex: 0 1 50%
+			font-size: 4rem
+			font-weight: 700
+		p
+			flex: 0 1 50%
+			box-sizing: border-box
+			padding-right: 16.5%
+			font-size: 1.75rem
+			font-weight: 400
+			line-height: 160%
+		b
+			font-weight: 800
+
+	.plans
+		width: 100%
+		max-width: $column-big-up
+
+		.tabs
+			padding: 8px
+			border: solid 1px #ccced5
+			border-radius: 12px
+			display: inline-block
+
+			button
+				@extend %button
+				font-weight: 900
+				padding: 0 40px
+				transition: background-color 0.3s $ease
+
+				&:first-child
+					margin-right: 8px
+				
+				&:hover
+					background-color: darken($neutral_10, 5%)
+
+				&.active
+					background-color: $brand-primary
+					cursor: default
+					&:hover
+						background-color: $brand-primary
+
+			em
+				background-color: $brand-secondary
+				color: white
+				font-weight: 400
+				letter-spacing: 0
+				border-radius: 40px
+				padding: 4px 8px
+				margin-left: 12px
+
+	.cards-container
+		width: 100%
+		max-width: $column-big-up
+		margin: 40px 0 120px
+		display: none
+		grid-template-columns: 1fr 1fr 1fr
+		grid-template-rows: auto 
+		column-gap: 80px
+
+		&.active
+			display: grid
+
+		& > div
+			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12)
+			padding: 112px 64px 64px
+			border-radius: 16px
+			position: relative
+			background:
+				color: white
+				repeat: no-repeat
+				position: 64px 64px
+
+			$price_list: basic business professional
+			@each $plan in $price_list
+				&.#{$plan}
+					background-image: url(../img/#{$plan}.svg)
+
+			&.basic
+				background-color: $brand-secondary
+				color: white
+
+				li
+					background-image: url("../img/check-invert.svg")
+
+				a
+					background-color: white
+					color: $brand-secondary
+
+			&.business
+				&::before
+					content: 'Recomendado'
+					font-weight: 300
+					text-transform: uppercase
+					position: absolute
+					top: 71px
+					right: 80px
+
+			strong
+				display: block
+				font-size: 2rem
+				font-weight: 900
+				line-height: 160%
+				margin-bottom: 8px
+
+			p
+				font-size: 1.75rem
+				font-weight: 400
+				line-height: 160%
+				margin-bottom: 40px
+
+			em
+				display: block
+				font-size: 2.5rem
+				font-weight: 900
+				line-height: 160%
+
+			sub
+				font-size: 1.375rem
+				line-height: 1
+				vertical-align: baseline
+
+			small
+				display: block
+				font-size: 1.25rem
+				line-height: 160%
+
+				i
+					background-color: #FFE2A9
+					font-weight: 500
+					font-size: 0.9rem
+					font-style: normal
+					border-radius: 40px
+					padding: 1px 8px
+					float: right
+
+			ul
+				margin: 40px 0
+
+			li
+				font-size: 1.5rem
+				font-weight: 400
+				line-height: 160%
+				padding-left: 40px
+				background: url("../img/check.svg") no-repeat 0 0
+
+			b
+				font-weight: 900
+
+			a
+				@extend %button
+				display: block
+				text-align: center
+				background-color: $brand-secondary
+				color: white
+				transition: transform 0.3s $ease
+
+				&:hover
+					transform: scale(1.05)
+
+
+	.budget
+		width: 100%
+		max-width: calc($column-big-up - 20.4%)
+		border: solid 3px $brand-secondary
+		border-radius: 24px
+		margin: 0 auto
+		display: flex
+		gap: 32px
+		justify-content: space-between
+		align-items: center
+		padding: 60px 0
+		box-sizing: border-box
+
+		div
+			flex: 0 1 70%
+			padding-left: 56px
+			box-sizing: border-box
+
+		strong
+			font-size: 2.5rem
+			line-height: 160%
+			font-weight: 700
+
+		p
+			font-size: 1.25rem
+			line-height: 160%
+			font-weight: 400
+
+		a
+			@extend %button
+			background-color: $brand-primary
+			box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12)
+			margin-right: 56px
+			transition: transform 0.3s $ease
+
+			&:hover
+				transform: scale(1.05)
+
+

@@ -1,0 +1,52 @@
+<svg width="229" height="266" viewBox="0 0 229 266" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_94_6577" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="152" y="186" width="77" height="80">
+<path d="M217.387 198.45C232.129 213.794 232.129 238.67 217.387 254.013C202.644 269.357 178.743 269.357 164 254.013C149.258 238.67 149.258 213.794 164 198.45C178.743 183.107 202.644 183.107 217.387 198.45Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_94_6577)">
+<path d="M127.938 201.842L209.404 286.535" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M124.197 205.64L205.664 290.428" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M120.549 209.532L201.924 294.32" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M117.537 214.186L199.003 298.974" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M113.889 218.077L195.264 302.77" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M146.457 182.472L227.923 267.26" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M142.807 186.366L224.182 271.154" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M139.066 190.258L220.533 274.951" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M136.148 194.911L217.524 279.604" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M132.408 198.803L213.875 283.496" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M165.066 163.197L246.442 247.985" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M161.326 167.091L242.793 251.784" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M157.588 170.888L239.054 255.676" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M154.666 175.636L236.132 260.329" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M150.928 179.435L232.394 264.223" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M183.588 143.924L265.054 228.617" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M179.848 147.817L261.314 232.51" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M176.197 151.614L257.572 236.402" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M173.188 156.269L254.654 241.057" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M169.537 160.161L250.912 244.949" stroke="#3B3B3D" stroke-width="1.5"/>
+</g>
+<mask id="mask1_94_6577" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="77" height="79">
+<path d="M65.0019 11.5076C79.7443 26.8511 79.7443 51.7273 65.0019 67.0708C50.2595 82.4143 26.3578 82.4143 11.6154 67.0708C-3.12701 51.7273 -3.12701 26.8511 11.6154 11.5076C26.3578 -3.83587 50.2595 -3.83587 65.0019 11.5076Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_94_6577)">
+<path d="M-24.4102 14.8877L56.965 99.5808" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M-28.1504 18.7773L53.316 103.47" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M-31.8906 22.5781L49.5758 107.366" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M-34.8105 27.2295L46.6558 112.018" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M-38.5508 31.123L42.9156 115.911" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M-5.89062 -4.38672L75.5758 80.3063" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M-9.63281 -0.587891L71.8336 84.2001" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M-13.2812 3.30371L68.0939 87.9968" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M-16.291 7.95605L65.1754 92.7441" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M-19.9395 11.8486L61.4357 96.5417" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M12.627 -23.7568L94.0933 61.0312" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M8.97852 -19.8633L90.3537 64.8298" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M5.23828 -15.9717L86.7047 68.7214" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M2.32031 -11.3184L83.6955 73.3747" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M-1.42188 -7.51953L80.0445 77.2685" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M31.2383 -43.0303L112.613 41.7577" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M27.498 -39.1377L108.964 45.5554" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M23.7578 -35.3398L105.224 49.4482" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M20.8379 -30.6885L102.304 54.0995" stroke="#3B3B3D" stroke-width="1.5"/>
+<path d="M17.0977 -26.7959L98.5641 57.9921" stroke="#3B3B3D" stroke-width="1.5"/>
+</g>
+</svg>

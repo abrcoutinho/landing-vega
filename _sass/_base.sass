@@ -1,0 +1,197 @@
+
+// fonts
+$font: 'Satoshi', sans-serif
+
+// vars
+$brand-primary: #FFB727
+$brand-secondary: #000C2C
+$neutral_10: #EEEEEE
+$neutral_50: #585C6A
+$neutral_80: #27272A
+$neutral_90: #1D1D1F
+
+
+$darkblue:    #061F39
+$black:       #343434
+$green:       #3ADBE7
+
+
+$ease: cubic-bezier(0.5,0,0,1)
+
+// resets
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, nav, section, menu, time, mark, audio, video, canvas
+  margin:     0
+  padding:    0
+  border:     0
+  outline:     none
+
+html, body
+  min-height:               100%
+  -ms-text-size-adjust:     100%
+  -webkit-text-size-adjust: 100%
+  background-color:         #FAFBFC
+  outline:                  none
+
+body, input, textarea
+  font:                     1em $font
+  font-weight:              400
+  -webkit-font-smoothing:   antialiased
+  color:                    $brand-secondary
+
+a
+  text-decoration:          none
+ul, ol, dl
+  list-style:               none
+button
+  padding:                  0
+  border:                   0
+  background:               transparent
+  cursor:                   pointer
+img
+  display:                  block
+em
+  font-style:               normal
+
+
+// selection
+::selection
+  background:       $brand-secondary
+  color:            $brand-primary
+  text-shadow:      none
+::-moz-selection
+  background:       $brand-secondary
+  color:            $brand-primary
+  text-shadow:      none
+
+
+// placeholder
+$placeholder: $brand-secondary
+::-webkit-input-placeholder
+  color: $placeholder
+::-moz-placeholder
+  color: $placeholder
+\:-moz-placeholder
+  color: $placeholder
+\:-ms-input-placeholder
+  color: $placeholder
+
+
+// scrollbars webkit
+::-webkit-scrollbar
+  width:                2px
+::-webkit-scrollbar-track
+  -webkit-box-shadow:   inset 0 0 6px rgba(0,0,0,.1)
+  border-radius:        4px
+::-webkit-scrollbar-thumb
+  border-radius:        4px
+  background:           $brand-secondary
+  -webkit-box-shadow:   inset 0 0 6px rgba(0,0,0,.5)
+::-webkit-scrollbar-thumb:window-inactive
+  background:           $brand-secondary
+
+
+%clear
+  &:after
+    height:             0
+    clear:              both
+    content:            "."
+    display:            block
+    font-size:          0
+    visibility:         hidden
+    position:           initial
+
+
+@mixin translate($val1, $val2)
+  -webkit-transform:    translate($val1, $val2)
+  -moz-transform:       translate($val1, $val2)
+  -ms-transform:        translate($val1, $val2)
+  -o-transform:         translate($val1, $val2)
+  transform:            translate($val1, $val2)
+
+
+%input_focus
+  outline:
+    width: 4px
+    style: solid
+    color: transparent
+    offset: -4px
+  &:hover
+    outline-color: lighten(#FFE2A9, 10%)
+  &:focus
+    outline-color: #FFE2A9
+    
+
+
+%gradient_bg
+  background: rgb(255,183,39)
+  background: linear-gradient(160deg, rgba(255,183,39,1) 0%, rgba(255,104,39,1) 100%)
+
+
+%gradient_type
+  background: rgb(255,183,39)
+  background: linear-gradient(160deg, rgba(255,183,39,1) 0%, rgba(255,104,39,1) 100%)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  font-weight: 900
+
+
+%button
+  text-transform: uppercase
+  color: $brand-secondary
+  height: 64px
+  line-height: 64px
+  padding: 0 1.5rem
+  font-weight: 900
+  border-radius: 8px
+  letter-spacing: 1px
+  display: inline-block
+  position: relative
+
+
+
+// Animate on scroll
+.slide-in
+  opacity: 0
+
+.align-left
+  @include translate(-30%, 0)
+.align-right
+  @include translate(30%, 0)
+.align-up
+  @include translate(0, 50px)
+
+.active
+  opacity: 1
+  @include translate(0, 0)
+  transition: all .8s $ease .4s
+
+
+// Sticky elements
+.stick
+  position: fixed
+  top: 0
+
+
+// Media queries
+@mixin for-size($size)
+  @if $size == phone-only
+    @media (max-width: 599px)
+      @content
+  @else if $size == tablet-portrait-up
+    @media (min-width: 600px) and (orientation: portrait) and (max-width: 1199px)
+      @content
+  @else if $size == tablet-landscape-up
+    @media (min-width: 900px) and (orientation: landscape) and (max-width: 1199px)
+      @content
+  @else if $size == desktop-up
+    @media (min-width: 1200px) and (max-width: 1599px)
+      @content
+  @else if $size == big-desktop-up
+    @media (min-width: 1600px)
+      @content
+
+$column-phone: 90vw
+$column-tablet-portrait-up: 90vw
+$column-tablet-landscape-up: 90vw
+$column-desktop-up: 90vw
+$column-big-up: 1528px

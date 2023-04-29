@@ -1,0 +1,548 @@
+// Media Smartphones
+
+@include for-size(phone-only)
+
+	.vega > .header
+		height: 120px
+
+		&.scrolled
+			height: 80px
+
+			.logo img
+				transform: scale(0.6) translateX(-70px)
+
+		.logo img
+			transform: scale(0.6) translateX(-70px)
+
+		.content
+			max-width: $column-phone
+
+		.menu
+			display: none
+
+		.sign-up
+			display: none
+
+		.menu-mobile-button
+			display: inline-block
+			background: url("../img/menu-mobile.svg") no-repeat 50% 50%
+
+	.cover
+		padding-top: 36vw
+
+		&::before
+			left: 0
+			background:
+				size: 220vw auto
+				position: -30vw -69vw
+
+
+		&::after
+			display: none
+
+		.content
+			max-width: 100%
+			height: auto
+			flex-wrap: wrap
+			justify-content: center
+
+		.info
+			flex: 0 1 calc($column-phone - 8vw)
+
+			hgroup
+				padding-top: 2rem
+				width: 100%
+
+				h1
+					font-size: 9vw
+					line-height: 120%
+					margin-bottom: 2rem
+				h2
+					font-size: 4.4vw
+
+		form
+			width: 100%
+			height: auto
+			flex-wrap: wrap
+			margin: 12vw 0
+
+			input[type="email"]
+				font-size: 1rem
+				padding: 0 16px 0 64px
+				background-position: 16px center
+				flex: 0 1 100%
+				height: 56px
+
+			button
+				font: 2.8vw/100% $font
+					weight: 800
+				letter-spacing: 0
+				flex: 0 1 100%
+				height: 56px
+
+				span
+					display: inline
+
+		.checkout
+			flex: 0 1 100%
+			height: 100vh
+			position: relative
+			padding-bottom: 16vw
+
+			&::after
+				content: ''
+				width: 100%
+				height: 100%
+				position: absolute
+				top: 0
+				right: 0
+				background: url("../img/mobile.png") no-repeat 50% top
+					size: 130vw auto
+				transform: scale(1)
+
+		footer
+			background-size: 48px auto
+			padding-left: 64px
+
+			strong
+				font-size: 5vw
+
+			h2
+				font-size: 4.2vw
+				padding-top: 8px
+
+
+		.possibilities
+			max-width: $column-phone
+
+			h1
+				font-size: 1.6rem
+				margin-bottom: 32px
+
+			.cards
+				gap: 16px
+
+				li
+					height: 200px
+
+					&::after
+						width: 40px
+						top: 24px
+						left: 24px
+
+				h2
+					font-size: 2vw
+
+		& > hgroup
+			max-width: $column-phone
+			padding: 24vw 0
+			flex-wrap: wrap
+
+			h1
+				font-size: 8vw
+				flex: 0 1 100%
+				padding-left: 18vw
+			h2
+				font-size: 4.5vw
+				flex: 0 1 100%
+				padding: 40px 8vw 0 18vw
+
+
+	.resources
+
+		& > div
+			max-width: $column-phone
+			column-gap: 40px
+			row-gap: 40px
+			grid-template-columns: 1fr 1fr
+			grid-template-rows: auto 80vw 88vw 128vw 64vw
+
+		h1
+			font-size: 8vw
+
+		article
+			&::before
+				min-height: 160px
+			&::after
+				width: 40px
+				height: 40px
+				border: solid 4px $neutral_10
+				left: 50%
+				top: 136px
+				transform: translateX(-50%)
+
+			&:nth-of-type(2)
+				transform: translateY(-19.6vw)
+
+			&:nth-of-type(3)
+				transform: translateY(0)
+
+			&:nth-of-type(4)
+				transform: translateY(0)
+				&::before
+					height: 186px
+				&::after
+					top: 160px
+
+			&:nth-of-type(5)
+				transform: translateY(0)
+				&::before
+					height: auto
+				&::after
+					top: 136px
+
+			&:nth-of-type(6)
+				transform: translateY(0)
+
+			&:nth-of-type(7)
+				transform: translateY(0)
+				&::before
+					height: 237px
+				&::after
+					top: 212px
+
+			&:nth-of-type(8)
+				transform: translateY(-100px)
+				&::before
+					height: auto
+				&::after
+					top: 134px
+
+
+		h2
+			font-size: 4.7vw
+			padding: 32px 0
+
+
+
+	.checkout-preview
+		background: none
+		height: auto
+		padding: 0 0 80px
+		display: flex
+		justify-content: center
+	
+		& > a
+			font-size: 0.8rem
+			height: 56px !important
+			line-height: 56px !important
+			position: static
+			transform: none
+
+
+
+	.sales-recovery
+		& > div
+			max-width: $column-phone
+			flex-wrap: wrap
+			padding: 18vw 0 200px
+			background:
+				size: 0 0, 155vw auto
+				position: -999px -999px, right bottom
+
+		.titles
+			flex: 0 1 100%
+
+			strong
+				font-size: 9vw
+				width: 70vw
+
+			h1, p
+				font-size: 6vw
+
+		.events
+			flex: 0 1 100%
+
+			small
+				font-size: 6vw
+
+			.grid
+				grid-template-columns: 65vw 65vw 65vw 65vw
+				grid-template-rows: auto
+				column-gap: 24px
+
+			dt
+				font-size: 6vw
+			dd
+				font-size: 5.2vw
+
+
+
+
+	.integrations
+		padding: 25vw 0
+
+		h2
+			max-width: $column-phone
+			font-size: 10vw
+		.carousel
+			height: 140px
+
+		h3
+			font-size: 4vw
+			top: 0
+			left: 5vw
+			letter-spacing: 0
+			text-align: left
+			transform: translate(0, 0)
+
+		.landing
+			max-width: $column-phone
+			grid-template-columns: 100%
+			grid-template-rows: 70vw auto auto
+			margin-top: 15vw
+			background:
+				size: auto 70vw
+				position: center 0
+
+			strong
+				grid-column-start: 1
+				grid-row-start: 2
+				font-size: 6vw
+
+			p
+				grid-column-start: 1
+				grid-row-start: 3
+				font-size: 4.2vw
+				margin-top: 4vw
+
+
+
+	.features
+		max-width: $column-phone
+		grid-template-columns: 1fr
+		grid-template-rows: auto auto
+		row-gap: 40px
+
+		& > div
+			padding: 96px 32px 250px
+
+			&:first-child
+				background:
+					position: 32px 32px, center 90%
+					size: 40px auto, 80% auto
+
+			&:last-child
+				background:
+					position: 32px 32px, 32px 90%
+					size: 40px auto, 50% auto
+
+		strong
+			font-size: 10vw
+		p
+			font-size: 6.5vw
+
+
+
+
+	.price
+		padding-top: 32vw
+
+		.titles
+			max-width: $column-phone
+			flex-wrap: wrap
+
+			h1
+				flex: 0 1 100%
+				font-size: 10vw
+
+			p
+				flex: 0 1 100%
+				box-sizing: border-box
+				padding-right: 0
+				font-size: 5vw
+
+		.plans
+			max-width: $column-phone
+			margin-top: 12vw
+
+			.tabs
+				display: flex
+
+				button
+					padding: 0 16px
+					font-size: 3.2vw
+
+					&:last-of-type
+						flex: 1 1 0
+						
+		.cards-container
+			max-width: $column-phone
+			column-gap: 6vw
+
+			& > div
+				width: 60vw
+				padding: 20vw 6vw 6vw
+				background-position: 6vw 6vw
+				background-size: 6vw auto
+
+				strong
+					font-size: 8vw
+				p
+					font-size: 5vw
+				em
+					font-size: 9vw
+				sub
+					font-size: 6vw
+				small
+					font-size: 4.5vw
+				ul
+					margin: 8vw 0
+				li
+					font-size: 4.5vw
+					background:
+						size: 20px auto
+						position: 0 6px
+					padding-left: 40px
+				a
+					font-size: 4vw
+					height: 56px !important
+					line-height: 56px !important
+
+		.budget
+			max-width: $column-phone
+			flex-wrap: wrap
+			padding: 6vw
+
+			div
+				flex: 0 1 100%
+				padding-left: 0
+			strong
+				font-size: 8vw
+				display: block
+				margin-bottom: 4vw
+				line-height: 140%
+			p
+				font-size: 5vw
+			a
+				flex: 0 1 100%
+				margin-right: 0
+				text-align: center
+
+
+
+	.founders
+		max-width: 100vw
+		margin: 100px 0 0
+
+		.container
+			max-width: 100vw
+			flex-wrap: wrap
+			gap: 0
+
+			& > div
+				border-radius: 0
+				box-shadow: none
+				padding: 8vw
+
+				&:first-child
+					flex: 0 1 100%
+				&:last-child
+					flex: 0 1 100%
+					padding: 16vw 8vw
+					row-gap: 80px
+				h1
+					font-size: 4vw
+				p
+					font-size: 6vw
+					margin: 16px 0 40px
+
+				dt
+					font-size: 5vw
+				dd
+					font-size: 5vw
+					margin-bottom: 5vw
+				figcaption
+					font-size: 4vw
+
+
+
+	.newsletter
+		max-width: 100vw
+		margin: 0
+
+		form
+			max-width: 100vw
+			border-radius: 0
+			padding: 16vw 8vw
+			flex-wrap: wrap
+
+		fieldset
+			flex: 0 1 100%
+
+		strong
+			font-size: 8vw
+		p
+			font-size: 5vw
+		.mail
+			height: 56px
+
+			input[type="email"]
+				font-size: 1rem
+				padding: 0 16px 0 64px
+				background-position: 16px center
+
+
+
+	.footer
+		.contato
+			max-width: $column-phone
+			flex-wrap: wrap
+			gap: 80px
+			padding: 64px 0
+
+			address
+				flex: 0 1 100%
+				padding-left: 0
+				padding-top: 32px
+				background:
+					position: 0 0
+					size: 24px auto
+
+				strong
+					font-size: 5vw
+				em
+					font-size: 8vw
+					margin: 16px 0
+				i
+					font-size: 1.4rem
+					margin: 16px 0
+				p
+					font-size: 1.1rem
+				a
+					font-size: 5vw
+				.qrcode
+					display: none
+
+			.move-up
+				width: 56px
+				height: 56px
+				background-size: 56px auto
+				bottom: -28px
+
+		.links
+			flex-wrap: wrap
+			max-width: $column-phone
+			padding: 64px 0
+
+			& > div
+				flex: 0 1 100%
+				div
+					margin: 24px 0
+				a
+					font-size: 1rem
+				small
+					font-size: 0.8rem
+
+			.social
+				justify-content: center
+				margin-top: 80px
+				gap: 40px
+
+				li
+					flex: 0 1 32px
+				a
+					width: 32px
+					height: 32px
+
+

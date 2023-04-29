@@ -1,0 +1,218 @@
+// Capa, big-desktop-up
+
+.cover
+	padding-top: 200px
+	width: 100vw
+	display: flex
+	flex-flow: column wrap
+	align-items: center
+	position: relative
+
+	&::before
+		content: ''
+		width: 100vw
+		height: 100%
+		position: absolute
+		top: 0
+		left: 6%
+		background: url("../img/gradient.svg") no-repeat 20% 90%
+
+	&::after
+		content: ''
+		width: calc($column-big-up / 2)
+		height: 100%
+		position: absolute
+		top: 0
+		right: 50%
+		background: url("../img/mobile.png") no-repeat 50% 150px
+		transform: translateX(100%)
+
+
+	.content
+		width: 100%
+		height: 840px
+		max-width: $column-big-up
+		display: flex
+		justify-content: space-between
+		z-index: 1
+
+
+	.info
+		flex: 0 1 50%
+
+		hgroup
+			width: 70%
+			padding-top: 5rem
+
+			h1
+				font-size: 4rem
+				line-height: 130%
+				font-weight: bold
+				margin-bottom: 1.5rem
+
+			h2
+				color: $neutral_50
+				font-size: 1.75rem
+				line-height: 140%
+				font-weight: normal
+				b
+					font-weight: bolder
+
+		mark
+			@extend %gradient_type 
+
+
+	form
+		width: 85%
+		height: 72px
+		margin: 48px 0 80px
+		border-radius: 8px
+		overflow: hidden
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12)
+		display: flex
+
+		input[type="email"]
+			height: 100%
+			border: none
+			padding: 0 16px 0 84px
+			font-size: 1.25rem
+			background: white url("../img/email.svg") no-repeat 28px center
+			flex: 1 1 auto
+			border-radius: 8px 0 0 8px
+
+			@extend %input_focus
+	
+		button
+			@extend %button
+			height: 100%
+			border-radius: 0
+			padding-right: 72px
+			background: $brand-primary url("../img/arrow-left.svg") no-repeat 90% center
+			font: 1rem/100% $font
+				weight: 800
+
+			&:hover
+				background-color: lighten($brand-primary, 10%)
+
+			span
+				display: none
+
+	footer
+		padding-left: 80px
+		background: url("../img/bill.svg") no-repeat left top
+
+		strong
+			font-size: 1.5rem
+			font-weight: bolder
+			line-height: 140%
+
+		h2
+			font-size: 1.25rem
+			font-weight: normal
+			line-height: 140%
+			color: $neutral_50
+
+
+	.checkout
+		flex: 0 1 50%
+
+
+	.possibilities
+		width: 100%
+		max-width: $column-big-up
+		z-index: 1
+
+		h1
+			font-size: 2.6rem
+			margin-bottom: 48px
+
+		.cards
+			display: flex
+			justify-content: space-between
+			gap: 48px
+
+			li
+				height: 360px
+				flex: 1 1 0
+				display: flex
+				align-items: flex-end
+				border-radius: 16px
+				position: relative
+				overflow: hidden
+				background:
+					size: auto 120%
+					repeat: no-repeat
+					position: 50% 50%
+
+				$possibilidades_list: fisico digital assinatura importado
+				@each $possibilidade in $possibilidades_list
+					&.#{$possibilidade}
+						background-image: url(../img/#{$possibilidade}.jpg)
+
+				@each $possibilidade_ico in $possibilidades_list
+					&.#{$possibilidade_ico}::after
+						background-image: url(../img/ico-#{$possibilidade_ico}.svg)
+
+				&::before
+					content: ''
+					width: 100%
+					height: 90%
+					background: rgb(0,0,0)
+					background: linear-gradient(0deg, rgba(0,0,0,0.7959558823529411) 0%, rgba(0,0,0,0) 100%)
+					position: absolute
+					bottom: 0
+					left: 0
+
+				&::after
+					content: ''
+					width: 64px
+					height: 64px
+					position: absolute
+					top: 48px
+					left: 40px
+					background:
+						size: 100% auto
+						repeat: no-repeat
+						position: left top
+
+				&.fisico
+					background-size: 150% auto
+					background-position: 64% 90%
+
+
+			h2
+				flex: 1 1 0
+				color: white
+				padding: 24px 10%
+				font-size: 1.75rem
+				font-weight: bold
+				z-index: 1
+
+
+	& > hgroup
+		width: 100%
+		max-width: $column-big-up
+		padding: 200px 0
+		z-index: 1
+		display: flex
+		justify-content: space-between
+
+		h1
+			flex: 0 1 50%
+			font-size: 3.25rem
+			font-weight: 500
+			line-height: 160%
+
+		b
+			font-weight: 800
+
+		mark
+			@extend %gradient_type
+			font-weight: 800
+
+		h2
+			flex: 0 1 20%
+			font-size: 1.75rem
+			line-height: 140%
+			font-weight: bold
+			padding: 40px

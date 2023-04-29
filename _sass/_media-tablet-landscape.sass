@@ -1,0 +1,483 @@
+// Tablet landscape
+
+@include for-size(tablet-landscape-up)
+
+	.vega > .header
+		height: 120px
+
+		&.scrolled
+			height: 80px
+
+			.logo img
+				transform: scale(0.6) translateX(-70px)
+
+		.logo img
+			transform: scale(0.6) translateX(-70px)
+
+		.content
+			max-width: $column-tablet-landscape-up
+
+		.menu
+			a
+				font-size: 0.9rem
+				margin: 0 1.5vw
+
+				&:not(:first-child)::before
+					left: -2vw
+
+		.sign-up
+			gap: 0
+
+			a
+				font-size: 0.7rem
+				height: 40px !important
+				line-height: 40px !important
+
+
+	.cover
+		padding-top: 120px
+
+		&::before
+			left: 0
+			background:
+				size: 220vw auto
+				position: -30vw -69vw
+
+
+		&::after
+			width: 45vw
+			background:
+				position: 50% 60px
+				size: 80% auto
+
+		.content
+			max-width: $column-tablet-landscape-up
+			height: 56vw
+
+		.info
+			hgroup
+				padding-top: 2rem
+				width: 70%
+
+				h1
+					font-size: 3.4vw
+					line-height: 120%
+					margin-bottom: 1rem
+				h2
+					font-size: 1.7vw
+
+		form
+			width: 70%
+			height: auto
+			flex-wrap: wrap
+			margin: 40px 0
+
+			input[type="email"]
+				font-size: 1rem
+				padding: 0 16px 0 64px
+				background-position: 16px center
+				flex: 0 1 100%
+				height: 48px
+
+			button
+				font: 1.1vw/100% $font
+					weight: 800
+				letter-spacing: 0
+				flex: 0 1 100%
+				height: 48px
+
+				span
+					display: inline
+
+		footer
+			background-size: auto 100%
+			padding-left: 64px
+
+			strong
+				font-size: 1.2rem
+
+			h2
+				font-size: 1rem
+
+
+		.possibilities
+			max-width: $column-tablet-landscape-up
+
+			h1
+				font-size: 1.6rem
+				margin-bottom: 32px
+
+			.cards
+				gap: 32px
+
+				li
+					height: 200px
+
+					&::after
+						width: 40px
+						top: 24px
+						left: 24px
+
+				h2
+					font-size: 1.1rem
+
+		& > hgroup
+			max-width: $column-tablet-landscape-up
+			padding: 12vw 0
+
+			h1
+				font-size: 3vw
+			h2
+				font-size: 2vw
+
+
+	.resources
+
+		& > div
+			max-width: $column-tablet-landscape-up
+			column-gap: 40px
+			row-gap: 40px
+			grid-template-rows: auto auto auto
+
+		h1
+			font-size: 4vw
+
+		article
+			&::before
+				min-height: 160px
+			&::after
+				width: 40px
+				height: 40px
+				border: solid 4px $neutral_10
+				left: 20PX
+				top: 136PX
+
+			&:nth-of-type(3)
+				transform: translateY(82px)
+
+			&:nth-of-type(4)
+				transform: translateY(0)
+				&::before
+					height: 243px
+				&::after
+					top: 218px
+
+			&:nth-of-type(5)
+				transform: translateY(0)
+				&::before
+					height: auto
+				&::after
+					top: 136px
+
+			&:nth-of-type(6)
+				transform: translateY(0)
+
+			&:nth-of-type(7)
+				transform: translateY(0)
+
+			&:nth-of-type(8)
+				transform: translateY(-100px)
+				&::before
+					height: 260px
+				&::after
+					top: 234px
+
+
+		h2
+			font-size: 1.7vw
+			padding: 40px 24px 24px
+
+
+
+	.checkout-preview
+		background-size: 90vw auto
+		height: 85vw
+	
+		& > a
+			font-size: 0.7rem
+			height: 40px !important
+			line-height: 40px !important
+
+
+
+	.sales-recovery
+		& > div
+			max-width: $column-tablet-landscape-up
+			padding: 18vw 0
+			background:
+				size: 19vw auto, 90vw auto
+				position: 0 -30%, 0 bottom
+
+		.titles
+			strong
+				font-size: 3.6vw
+
+			h1, p
+				font-size: 1.8vw
+
+		.events
+			small
+				font-size: 1.2rem
+			.grid
+				column-gap: 24px
+				row-gap: 24px
+
+			dt
+				font-size: 2.4vw
+			dd
+				font-size: 1.6vw
+
+
+
+
+	.integrations
+		padding: 10vw 0 3vw
+
+		h2
+			max-width:$column-tablet-landscape-up
+			font-size: 3.6vw
+
+		.carousel
+			height: 140px
+
+		h3
+			font-size: 0.8rem
+			top: 0
+			left: 5vw
+			letter-spacing: 0
+			text-align: left
+			transform: translate(0, 0)
+
+		.landing
+			max-width: $column-tablet-landscape-up
+			background-size: 28% auto
+			margin-top: 0
+
+			strong
+				font-size: 2.5vw
+			p
+				font-size: 2vw
+
+
+
+
+	.features
+		max-width: $column-tablet-landscape-up
+		grid-template-rows: 580px
+		column-gap: 40px
+
+		& > div
+			padding: 120px 56px 56px
+
+			&:first-child
+				background:
+					position: 56px 40px, center 85%
+					size: 40px auto, 80% auto
+
+			&:last-child
+				background:
+					position: 56px 40px, 56px 90%
+					size: 40px auto, 50% auto
+
+		strong
+			font-size: 2.7vw
+		p
+			font-size: 1.8vw
+
+
+
+
+	.price
+		padding-top: 12vw
+
+		.titles
+			max-width: $column-tablet-landscape-up
+
+			h1
+				font-size: 3.4vw
+			p
+				font-size: 1.6vw
+
+		.plans
+			max-width: $column-tablet-landscape-up
+			margin-top: 5vw
+
+			.tabs
+				button
+					font-size: 0.7rem
+					height: 40px !important
+					line-height: 40px !important
+
+		.cards-container
+			column-gap: 3vw
+			margin: 20px 0 64px
+
+			& > div
+				padding: 7vw 3vw 3vw
+				background-position: 3vw 3vw
+				background-size: 3vw auto
+
+				&.business
+					&::before
+						top: 3.8vw
+						right: 3vw
+						font-size: 1.2vw
+
+				strong
+					font-size: 2.2vw
+				p
+					font-size: 1.8vw
+				em
+					font-size: 3vw
+				sub
+					font-size: 1.8vw
+				small
+					font-size: 1.5vw
+				ul
+					margin: 2.5vw 0
+				li
+					font-size: 1.5vw
+					background-size: 20px auto
+					padding-left: 28px
+				a
+					font-size: 0.7rem
+					height: 40px !important
+					line-height: 40px !important
+
+		.budget
+			max-width: 100%
+
+
+			div
+				flex: 0 1 60%
+				padding-left: 40px
+
+			strong
+				font-size: 2.5vw
+			a
+				font-size: 0.7rem
+				height: 40px !important
+				line-height: 40px !important
+				margin-right: 40px
+
+
+
+	.founders
+		max-width: 100%
+		margin: 64px auto
+
+		.container
+			max-width: $column-tablet-landscape-up
+
+			& > div
+				padding: 3vw
+
+				p
+					font-size: 2.2vw
+				dt
+					font-size: max(1.8vw, 1rem)
+					padding-left: 48px
+				dd
+					font-size: max(1.8vw, 1rem)
+					margin-bottom: 2vw
+					padding-left: 48px
+
+				& > a
+					font-size: 0.7rem
+					height: 40px !important
+					line-height: 40px !important
+
+				figure
+					&::before
+						transform: translate(-50%, -59.5%) scale(0.8)
+					&::after
+						transform: translate(-50%, -59.5%) scale(0.8)
+					img
+						width: 160px
+						height: auto
+
+				figcaption
+					font-size: 0.9rem
+
+
+
+	.newsletter
+		max-width: $column-tablet-landscape-up
+		margin: 0 auto 64px
+
+		form
+			max-width: 100%
+			padding: 40px 64px
+
+		strong
+			font-size: 2.2rem
+		p
+			font-size: 1.2rem
+
+		.mail
+			height: 56px
+
+			input[type="email"]
+				font-size: 1rem
+				padding: 0 16px 0 64px
+				background-position: 16px center
+
+
+
+	.footer
+		.contato
+			max-width: $column-tablet-landscape-up
+			padding: 64px 0
+
+			address
+				padding-left: 0
+				padding-top: 32px
+				background:
+					position: 0 0
+					size: 24px auto
+
+				strong
+					font-size: 1.4rem
+				em
+					font-size: 2rem
+					margin: 16px 0
+				i
+					font-size: 1.4rem
+					margin: 16px 0
+				p
+					font-size: 1.1rem
+				a
+					font-size: 1rem
+				.qrcode
+					width: 96px
+					padding-top: 128px
+					transform: translateX(60%)
+
+					&::before
+						height: 96px
+					&::after
+						top: 115px
+
+			.move-up
+				width: 56px
+				height: 56px
+				background-size: 56px auto
+				bottom: -28px
+
+
+		.links
+			max-width: $column-tablet-landscape-up
+			padding: 64px 0
+
+			& > div
+				a
+					font-size: 1rem
+				small
+					font-size: 0.8rem
+
+			.social
+				li
+					flex: 0 1 32px
+				a
+					width: 32px
+					height: 32px

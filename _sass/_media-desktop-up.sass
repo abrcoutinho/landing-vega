@@ -1,0 +1,327 @@
+// medium desktops
+
+@include for-size(desktop-up)
+
+	.vega > .header
+		height: 120px
+
+		&.scrolled
+			height: 80px
+
+		.logo img
+			transform: scale(0.7) translateX(-40px)
+
+		.content
+			max-width: $column-desktop-up
+
+		.menu
+			a
+				font-size: 1rem
+
+		.sign-up
+			a
+				font-size: 0.8rem
+				height: 48px !important
+				line-height: 48px !important
+
+
+	.cover
+		padding-top: 120px
+
+		&::after
+			width: 45vw
+			background:
+				position: 50% 60px
+				size: 80% auto
+
+		.content
+			max-width: $column-desktop-up
+			height: 56vw
+
+		.info
+			hgroup
+				padding-top: 4rem
+
+				h1
+					font-size: 3.8vw
+					line-height: 120%
+				h2
+					font-size: 1.7vw
+
+		form
+			width: 90%
+			height: 56px
+
+			input[type="email"]
+				font-size: 1rem
+				padding: 0 16px 0 64px
+				background-position: 16px center
+
+			button
+				font: 0.8rem/100% $font
+					weight: 800
+				letter-spacing: 0
+
+		footer
+			strong
+				font-size: 1.3rem
+
+			h2
+				font-size: 1.1rem
+
+
+		.possibilities
+			max-width: $column-desktop-up
+
+			h1
+				font-size: 2.2rem
+
+			.cards
+				li
+					height: 280px
+
+					&::after
+						width: 48px
+
+				h2
+					font-size: 1.4rem
+
+		& > hgroup
+			max-width: $column-desktop-up
+
+			h1
+				font-size: 3vw
+			h2
+				font-size: 2vw
+
+
+	.resources
+
+		& > div
+			max-width: $column-desktop-up
+
+		h1
+			font-size: 3rem
+		h2
+			font-size: 1.7vw
+
+
+
+	.checkout-preview
+		& > a
+			font-size: 0.8rem
+			height: 48px !important
+			line-height: 48px !important
+
+
+
+	.sales-recovery
+		& > div
+			max-width: $column-desktop-up
+			padding: 18vw 0
+			background:
+				size: 19vw auto, 80vw auto
+				position: 0 -40%, 0 bottom
+
+		.titles
+			strong
+				font-size: 3.3vw
+
+			h1, p
+				font-size: 1.6vw
+
+		.events
+			small
+				font-size: 1.2rem
+			.grid
+				column-gap: 48px
+				row-gap: 48px
+
+			dt
+				font-size: 2vw
+			dd
+				font-size: 1.4vw
+
+
+
+
+	.integrations
+		h2
+			max-width:$column-desktop-up
+			font-size: 3.3vw
+		h3
+			font-size: 2.7vw
+
+		.landing
+			max-width: $column-desktop-up
+			background-size: 28% auto
+
+			strong
+				font-size: 2.5vw
+
+
+
+
+	.features
+		max-width: $column-desktop-up
+		grid-template-rows: 800px
+
+		& > div
+			padding: 160px 56px 56px
+
+			&:first-child
+				background:
+					position: 56px 56px, center 85%
+					size: 56px auto, 80% auto
+
+			&:last-child
+				background:
+					position: 56px 56px, 56px 90%
+					size: 56px auto, 50% auto
+
+		strong
+			font-size: 2.7vw
+		p
+			font-size: 1.8vw
+
+
+
+
+	.price
+		.titles
+			max-width: $column-desktop-up
+
+			h1
+				font-size: 2.7vw
+			p
+				font-size: 1.5vw
+
+		.plans
+			max-width: $column-desktop-up
+
+			.tabs
+				button
+					font-size: 0.8rem
+					height: 48px !important
+					line-height: 48px !important
+
+		.cards-container
+			column-gap: 56px
+
+			& > div
+				padding: 80px 48px 48px
+				background-position: 48px 32px
+
+				&.business
+					&::before
+						top: 42px
+						right: 48px
+
+				strong
+					font-size: 2.2vw
+				p
+					font-size: 1.8vw
+				li
+					font-size: 1.5vw
+
+		.budget
+			max-width: calc($column-desktop-up - 20.4%)
+
+
+			div
+				flex: 0 1 60%
+				padding-left: 40px
+
+			strong
+				font-size: 2.5vw
+			a
+				font-size: 0.8rem
+				height: 48px !important
+				line-height: 48px !important
+				margin-right: 40px
+
+
+
+	.founders
+		max-width: $column-desktop-up
+
+		.container
+			max-width: calc($column-desktop-up - 20.4%)
+
+			& > div
+				p
+					font-size: 1.5vw
+
+				& > a
+					font-size: 0.8rem
+					height: 48px !important
+					line-height: 48px !important
+
+				figcaption
+					font-size: 1rem
+
+
+
+	.newsletter
+		max-width: $column-desktop-up
+
+		form
+			max-width: calc($column-desktop-up - 20.4%)
+			padding: 40px 64px
+
+		strong
+			font-size: 2.5rem
+		p
+			font-size: 1.8rem
+
+		.mail
+			height: 56px
+
+			input[type="email"]
+				font-size: 1rem
+				padding: 0 16px 0 64px
+				background-position: 16px center
+
+
+
+	.footer
+		.contato
+			max-width: $column-desktop-up
+
+			address
+				strong
+					font-size: 1.6rem
+				p
+					font-size: 1.2rem
+				.qrcode
+					width: 96px
+					padding-top: 128px
+					transform: translateX(170%)
+
+					&::before
+						height: 96px
+					&::after
+						top: 115px
+
+			.move-up
+				width: 56px
+				height: 56px
+				background-size: 56px auto
+				bottom: -28px
+
+
+		.links
+			max-width: $column-desktop-up
+
+			& > div
+				a
+					font-size: 1rem
+				small
+					font-size: 0.8rem
+
+			.social
+				li
+					flex: 0 1 32px
+				a
+					width: 32px
+					height: 32px

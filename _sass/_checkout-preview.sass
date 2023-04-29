@@ -1,0 +1,16 @@
+// Checkout preview, big-desktop-up
+
+.checkout-preview
+	height: 950px
+	background: url("../img/browser.svg") no-repeat center top
+	position: relative
+
+	& > a
+		@extend %button
+		background-color: $brand-primary
+		padding: 0 64px
+		position: absolute
+		bottom: 120px
+		left: 50%
+		transform: translateX(-50%)
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12)
