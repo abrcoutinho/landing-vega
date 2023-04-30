@@ -33,8 +33,8 @@
 		&::before
 			left: 0
 			background:
-				size: 220vw auto
-				position: -30vw -69vw
+				size: 380vw auto
+				position: -110vw -99vw
 
 
 		&::after
@@ -47,7 +47,7 @@
 			justify-content: center
 
 		.info
-			flex: 0 1 calc($column-phone - 8vw)
+			flex: 0 1 86vw
 
 			header
 				padding-top: 2rem
@@ -84,10 +84,12 @@
 					display: inline
 
 		.checkout
-			flex: 0 1 100%
+			flex: none
+			display: block
+			width: 100vw
 			height: 100vh
 			position: relative
-			padding-bottom: 16vw
+			padding-bottom: 40vw
 
 			&::after
 				content: ''
@@ -96,9 +98,18 @@
 				position: absolute
 				top: 0
 				right: 0
-				background: url("../img/mobile.png") no-repeat 50% top
+				background: url("../img/mobile.webp") no-repeat 50% top
 					size: 130vw auto
 				transform: scale(1)
+
+			img
+				transform: translateY(30vw)
+				width: 84vw
+				height: auto
+				display: block
+				margin: 0 auto
+				position: relative
+				z-index: 1
 
 		footer
 			background-size: 48px auto
@@ -146,6 +157,7 @@
 				font-size: 4.5vw
 				flex: 0 1 100%
 				padding: 40px 8vw 0 18vw
+				font-weight: 400
 
 
 	.resources
@@ -212,6 +224,7 @@
 		h3
 			font-size: 4.7vw
 			padding: 32px 0
+			font-weight: 400
 
 
 
@@ -289,7 +302,7 @@
 		.landing
 			max-width: $column-phone
 			grid-template-columns: 100%
-			grid-template-rows: 70vw auto auto
+			grid-template-rows: 84vw auto auto
 			margin-top: 15vw
 			background:
 				size: auto 70vw
@@ -369,6 +382,7 @@
 		.cards-container
 			max-width: $column-phone
 			column-gap: 6vw
+			margin: 16px 0 120px
 
 			& > div
 				width: 60vw
@@ -393,7 +407,7 @@
 					background:
 						size: 20px auto
 						position: 0 6px
-					padding-left: 40px
+					padding-left: 32px
 				a
 					font-size: 4vw
 					height: 56px !important
@@ -441,12 +455,13 @@
 					flex: 0 1 100%
 					padding: 16vw 8vw
 					row-gap: 80px
-				h1
+				h2
 					font-size: 4vw
 				p
 					font-size: 6vw
 					margin: 16px 0 40px
-
+				dl
+					margin-bottom: 10vw
 				dt
 					font-size: 5vw
 				dd

@@ -24,7 +24,7 @@
 		position: absolute
 		top: 0
 		right: 50%
-		background: url("../img/mobile.png") no-repeat 50% 150px
+		background: url("../img/mobile.webp") no-repeat 50% 150px
 		transform: translateX(100%)
 
 
@@ -115,6 +115,11 @@
 
 	.checkout
 		flex: 0 1 50%
+		display: flex
+		justify-content: center
+
+		img
+			transform: scale(0.9) translateY(30px)
 
 
 	.possibilities
@@ -147,7 +152,7 @@
 				$possibilidades_list: fisico digital assinatura importado
 				@each $possibilidade in $possibilidades_list
 					&.#{$possibilidade}
-						background-image: url(../img/#{$possibilidade}.jpg)
+						background-image: url(../img/#{$possibilidade}.webp)
 
 				@each $possibilidade_ico in $possibilidades_list
 					&.#{$possibilidade_ico}::after
