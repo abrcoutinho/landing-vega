@@ -111,6 +111,77 @@
 				position: relative
 				z-index: 1
 
+			// Particles
+			@keyframes floating
+				from
+					transform: translateY(-70vh) scale(0.7)
+				to
+					transform: translateY(-71vh) scale(0.7)
+			span
+				z-index: -1
+
+				&:first-of-type // cross
+					top: 5%
+					left: -4%
+
+				&:nth-of-type(2) // bar
+					top: -1%
+					right: 15%
+
+				&:nth-of-type(3) // coin
+					top: 18%
+					left: 0
+
+				&:nth-of-type(4) // balloon
+					top: 12%
+					right: -5%
+
+				&:nth-of-type(5) // star
+					top: 25%
+					left: -8%
+
+				&:nth-of-type(6) // coin
+					top: 20%
+					right: 20%
+
+				&:nth-of-type(7) // gear
+					top: 25%
+					right: -8%
+
+				&:nth-of-type(8) // coin
+					top: 45%
+					left: 19%
+
+				&:nth-of-type(9) // bar
+					top: 56%
+					left: 11%
+
+				&:nth-of-type(10) // coin
+					top: 29%
+					left: 50%
+
+				&:nth-of-type(11) // bar
+					top: 64%
+					right: 1%
+
+				&:nth-of-type(12) // star
+					top: 76%
+					right: 19%
+
+				&:nth-of-type(13) // pie
+					top: 59%
+					left: -10%
+
+				&:nth-of-type(14) // bar
+					top: 96%
+					left: 19%
+
+				&:nth-of-type(15) // cross
+					top: 62%
+					right: 50%
+
+
+
 		footer
 			background-size: 48px auto
 			padding-left: 64px
@@ -382,7 +453,7 @@
 		.cards-container
 			max-width: $column-phone
 			column-gap: 6vw
-			margin: 16px 0 120px
+			margin: 16px 0 15vw
 
 			& > div
 				width: 60vw
@@ -437,7 +508,7 @@
 
 	.founders
 		max-width: 100vw
-		margin: 100px 0 0
+		margin: 15vw 0 0
 
 		.container
 			max-width: 100vw

@@ -42,7 +42,7 @@
 			margin: 0 2vw
 
 			&:hover
-				color: $brand-primary
+				color: $neutral_50
 
 			&:not(:first-child)::before
 				content: ''
@@ -76,13 +76,17 @@
 		a
 			@extend %button
 
+			&:hover
+				color: $neutral_50
+
 			&:last-child
 				background-color: $brand-secondary
 				color: white
 				box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12)
+				transition: transform 0.5s $ease
 
 				&:hover
-					background-color: lighten($brand-secondary, 10%)
+					transform: scale(1.05)
 
 
 	.menu-mobile-button

@@ -116,10 +116,156 @@
 	.checkout
 		flex: 0 1 50%
 		display: flex
+		position: relative
 		justify-content: center
 
 		img
 			transform: scale(0.9) translateY(30px)
+
+		// Particles
+		@keyframes floating
+			from
+				transform: translateY(0)
+			to
+				transform: translateY(10px)
+
+		span
+			position: absolute
+			background:
+				size: contain
+				repeat: no-repeat
+				position: 50% 50%
+			animation:
+				name: floating
+				duration: 1s
+				direction: alternate
+				iteration-count: infinite
+				timing-function: ease
+
+			$part1: url("../img/particles/part1.svg") // cross
+			$part2: url("../img/particles/part2.svg") // bar
+			$part3: url("../img/particles/part3.svg") // coin
+			$part4: url("../img/particles/part4.svg") // balloon
+			$part5: url("../img/particles/part5.svg") // star
+			$part6: url("../img/particles/part6.svg") // gear
+			$part7: url("../img/particles/part7.svg") // pie
+
+			&:first-of-type // cross
+				width: 38px
+				height: 38px
+				top: 5%
+				left: 10%
+				background-image: $part1
+				animation-delay: -0.5s
+
+			&:nth-of-type(2) // bar
+				width: 45px
+				height: 45px
+				top: -5%
+				right: 15%
+				background-image: $part2
+				animation-delay: -0.3s
+
+			&:nth-of-type(3) // coin
+				width: 17px
+				height: 17px
+				top: 18%
+				left: 0
+				background-image: $part3
+
+			&:nth-of-type(4) // balloon
+				width: 80px
+				height: 80px
+				top: 12%
+				right: 4%
+				background-image: $part4
+				animation-delay: -0.8s
+
+			&:nth-of-type(5) // star
+				width: 70px
+				height: 70px
+				top: 35%
+				left: 19%
+				background-image: $part5
+				animation-delay: -1.2s
+
+			&:nth-of-type(6) // coin
+				width: 17px
+				height: 17px
+				top: 32%
+				right: 20%
+				background-image: $part3
+				animation-delay: -0.5s
+
+			&:nth-of-type(7) // gear
+				width: 75px
+				height: 75px
+				top: 38%
+				right: 17%
+				background-image: $part6
+
+			&:nth-of-type(8) // coin
+				width: 17px
+				height: 17px
+				top: 51%
+				left: 19%
+				background-image: $part3
+				animation-delay: -0.6s
+
+			&:nth-of-type(9) // bar
+				width: 34px
+				height: 34px
+				top: 56%
+				left: 11%
+				background-image: $part2
+				animation-delay: -0.9s
+
+			&:nth-of-type(10) // coin
+				width: 17px
+				height: 17px
+				top: 74%
+				left: 5%
+				background-image: $part3
+				animation-delay: -0.7s
+
+			&:nth-of-type(11) // bar
+				width: 40px
+				height: 40px
+				top: 64%
+				right: 1%
+				background-image: $part2
+
+			&:nth-of-type(12) // star
+				width: 60px
+				height: 60px
+				top: 76%
+				right: 19%
+				background-image: $part5
+				animation-delay: -0.7s
+
+			&:nth-of-type(13) // pie
+				width: 100px
+				height: 100px
+				top: 85%
+				left: 1%
+				background-image: $part7
+				animation-delay: -1.2s
+
+			&:nth-of-type(14) // bar
+				width: 32px
+				height: 32px
+				top: 96%
+				left: 19%
+				background-image: $part2
+				animation-delay: -0.4s
+
+			&:nth-of-type(15) // cross
+				width: 34px
+				height: 34px
+				top: 98%
+				right: 10%
+				background-image: $part1
+				animation-delay: -0.2s
 
 
 	.possibilities
@@ -221,3 +367,12 @@
 			line-height: 140%
 			font-weight: bold
 			padding: 40px
+
+
+	.particles
+		width: 60vw
+		height: 120vh
+		position: absolute
+		top: 80px
+		right: 0
+

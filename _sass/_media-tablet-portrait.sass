@@ -99,6 +99,20 @@
 			img
 				transform: scale(0.9) translateY(1vw)
 
+			// Particles
+			@keyframes floating
+				from
+					transform: translateY(0) scale(0.6)
+				to
+					transform: translateY(10px) scale(0.6)
+			span
+				&:nth-of-type(5) // star
+					left: 10%
+				&:nth-of-type(7) // gear
+					right: 10%
+				&:nth-of-type(14) // bar
+					left: 30%
+
 		.possibilities
 			max-width: $column-tablet-portrait-up
 			margin-top: 64px

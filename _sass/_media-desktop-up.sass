@@ -31,7 +31,7 @@
 		&::after
 			width: 45vw
 			background:
-				position: 50% 7.7vw
+				position: 50% 5.7vw
 				size: 80% auto
 
 		.content
@@ -71,7 +71,20 @@
 
 		.checkout
 			img
-				transform: scale(0.9) translateY(1vw)
+				transform: scale(0.9) translateY(3.5vw)
+
+			// Particles
+			@keyframes floating
+				from
+					transform: translateY(0) scale(0.8)
+				to
+					transform: translateY(10px) scale(0.8)
+			span
+				&:nth-of-type(5) // star
+					left: 12%
+				&:nth-of-type(7) // gear
+					right: 12%
+			
 
 		.possibilities
 			max-width: $column-desktop-up
