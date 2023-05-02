@@ -126,7 +126,7 @@
 			.cards
 				gap: 32px
 
-				li
+				.card
 					height: 200px
 
 					&::after
@@ -254,15 +254,30 @@
 			font-size: 3.6vw
 
 		.carousel
-			height: 140px
+			height: auto
+			border: none
+			margin-bottom: 24px
+
+			&:first-of-type
+				border: none
+
+			.cards-container
+				opacity: 1
+
+				.card
+					width: 160px
+					height: 120px
+
+			.slick-list
+				padding: 0 5vw
 
 		h3
-			font-size: 0.8rem
-			top: 0
-			left: 5vw
+			position: static
+			font-size: 1.6vw
 			letter-spacing: 0
 			text-align: left
 			transform: translate(0, 0)
+			margin-left: 5vw
 
 		.landing
 			max-width: $column-tablet-landscape-up
@@ -328,7 +343,7 @@
 			column-gap: 3vw
 			margin: 20px 0 64px
 
-			& > div
+			.card
 				padding: 7vw 3vw 3vw
 				background-position: 3vw 3vw
 				background-size: 3vw auto

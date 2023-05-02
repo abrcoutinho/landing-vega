@@ -26,6 +26,57 @@
 		&:first-of-type
 			border-top: solid 1px #CCCED5
 
+		.cards-container
+			width: 100vw
+			margin-top: 10px
+			background-color: $neutral_10
+			opacity: 0
+
+			&:hover
+				transition: opacity 0.5s $ease
+				opacity: 1
+			
+			.card
+				border-radius: 12px
+				width: 320px
+				height: 200px
+				margin-left: 12px
+				background-color: white
+				position: relative
+
+				&::before
+					content: ''
+					width: 65%
+					height: 35%
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, -50%)
+					background:
+						repeat: no-repeat
+						size: contain
+						position: 50% 50%
+
+
+		.aplicativos
+			$aplicativos: shopify woo activecampaign notazz astron hotzapp
+			@each $app in $aplicativos
+				.#{$app}::before
+					background-image: url(../img/integracoes/apps/#{$app}.webp)
+
+		.pixel
+			$pixel_list: facebook google analytics tiktok pinterest kwai taboola uol_ads outbrain
+			@each $pixel in $pixel_list
+				.#{$pixel}::before
+					background-image: url(../img/integracoes/pixel/#{$pixel}.webp)
+
+		.gateways
+			$gateways_list: appmax getnet iugu asaas mercado_pago pagarme abmex zoutipay
+			@each $gateway in $gateways_list
+				.#{$gateway}::before
+					background-image: url(../img/integracoes/gateways/#{$gateway}.webp)
+
+
 	h3
 		font-size: 3.5rem
 		text-transform: uppercase

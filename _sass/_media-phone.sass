@@ -24,7 +24,7 @@
 			display: none
 
 		.menu-mobile-button
-			display: inline-block
+			display: none//inline-block
 			background: url("../img/menu-mobile.svg") no-repeat 50% 50%
 
 	.cover
@@ -195,16 +195,18 @@
 
 
 		.possibilities
-			max-width: $column-phone
+			max-width: 100vw
 
 			h2
-				font-size: 1.6rem
+				font-size: 5.6vw
 				margin-bottom: 32px
+				padding-left: 10vw
 
 			.cards
-				gap: 16px
-
-				li
+				.slick-list
+					padding: 0 5vw !important
+				.card
+					width: 75vw !important
 					height: 200px
 
 					&::after
@@ -212,8 +214,14 @@
 						top: 24px
 						left: 24px
 
+					&:not(:first-of-type)
+						margin-left: 5vw
+
+					&.importado
+						background-size: cover
+
 				h3
-					font-size: 2vw
+					font-size: 5vw
 
 		article
 			max-width: $column-phone
@@ -317,15 +325,16 @@
 
 	.sales-recovery
 		& > div
-			max-width: $column-phone
+			max-width: 100vw
 			flex-wrap: wrap
 			padding: 18vw 0 200px
+			justify-content: center
 			background:
 				size: 0 0, 155vw auto
 				position: -999px -999px, right bottom
 
 		.titles
-			flex: 0 1 100%
+			flex: 0 1 90vw
 
 			strong
 				font-size: 9vw
@@ -335,15 +344,26 @@
 				font-size: 6vw
 
 		.events
-			flex: 0 1 100%
+			flex: none
+			display: block
+			width: 100vw
 
 			small
 				font-size: 6vw
+				padding-left: 5vw
 
 			.grid
-				grid-template-columns: 65vw 65vw 65vw 65vw
-				grid-template-rows: auto
-				column-gap: 24px
+				display: block
+
+				.slick-list
+					padding: 0 5vw !important
+				.card
+					width: 55vw !important
+
+					&:not(:first-of-type)
+						margin-left: 16px
+
+
 
 			dt
 				font-size: 6vw
@@ -359,16 +379,33 @@
 		h2
 			max-width: $column-phone
 			font-size: 10vw
+		
 		.carousel
-			height: 140px
+			height: auto
+			border: none
+			margin-bottom: 24px
+
+			&:first-of-type
+				border: none
+
+			.cards-container
+				opacity: 1
+
+				.card
+					width: 160px
+					height: 120px
+
+			.slick-list
+				padding: 0 5vw
+
 
 		h3
-			font-size: 4vw
-			top: 0
-			left: 5vw
+			position: static
+			font-size: 4.2vw
 			letter-spacing: 0
 			text-align: left
 			transform: translate(0, 0)
+			margin-left: 5vw
 
 		.landing
 			max-width: $column-phone
@@ -437,11 +474,13 @@
 				font-size: 5vw
 
 		.plans
-			max-width: $column-phone
+			max-width: 100vw
 			margin-top: 12vw
 
 			.tabs
 				display: flex
+				width: 85vw
+				margin: 0 auto
 
 				button
 					padding: 0 16px
@@ -451,15 +490,28 @@
 						flex: 1 1 0
 						
 		.cards-container
-			max-width: $column-phone
-			column-gap: 6vw
+			display: none
+			max-width: 100vw
 			margin: 16px 0 15vw
 
-			& > div
-				width: 60vw
+			&.active
+				display: block
+
+			.slick-list
+				padding: 0 5vw !important
+			.card
+				width: 60vw !important
 				padding: 20vw 6vw 6vw
 				background-position: 6vw 6vw
 				background-size: 6vw auto
+
+				&:not(:first-of-type)
+					margin-left: 16px
+
+				&.business
+					&::before
+						top: 6vw
+						right: 5vw
 
 				strong
 					font-size: 8vw

@@ -1,5 +1,5 @@
 #### URL of this website:
-https://landing-vega.github.io
+https://vegacheckout.com.br
 
 ### Configuration
 #### Check up your Ruby version:

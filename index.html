@@ -40,12 +40,12 @@ title: Vega Checkout
     <!-- Possibilidades -->
     <div class="possibilities">
       <h2>Para todas as possibilidades</h2>
-      <ul class="cards">
-        <li class="fisico"><h3>Produtos físicos</h3></li>
-        <li class="digital"><h3>Produtos digitais</h3></li>
-        <li class="assinatura"><h3>Assinaturas</h3></li>
-        <li class="importado"><h3>Importados</h3></li>
-      </ul>
+      <div class="cards">
+        <div class="card fisico"><h3>Produtos físicos</h3></div>
+        <div class="card digital"><h3>Produtos digitais</h3></div>
+        <div class="card assinatura"><h3>Assinaturas</h3></div>
+        <div class="card importado"><h3>Importados</h3></div>
+      </div>
     </div>
 
     <article>
@@ -116,22 +116,22 @@ title: Vega Checkout
         <small>Eventos</small>
 
         <div class="grid">
-          <dl>
+          <dl class="card">
             <dt>Vendas <br>aprovadas </dt>
             <dd>Mensagem disparada na  confirmação da compra </dd>
           </dl>
 
-          <dl>
+          <dl class="card">
             <dt>Carrinho abandonado</dt>
             <dd>Ofereça uma oferta para resgatar as compras não finalizadas</dd>
           </dl>
 
-          <dl>
+          <dl class="card">
             <dt>Boleto ou pix vencido</dt>
             <dd>Lembrete para o cliente efetivar a transação </dd>
           </dl>
 
-          <dl>
+          <dl class="card">
             <dt>Cartão recusado</dt>
             <dd>Disponibilize uma nova oportunidade de pagamento</dd>
           </dl>
@@ -150,14 +150,43 @@ title: Vega Checkout
 
     <div class="carousel">
       <h3>Aplicativos</h3>
+      <div class="cards-container aplicativos">
+        <div class="card shopify"></div>
+        <div class="card woo"></div>
+        <div class="card activecampaign"></div>
+        <div class="card notazz"></div>
+        <div class="card astron"></div>
+        <div class="card hotzapp"></div>
+      </div>
     </div>
 
     <div class="carousel">
       <h3>Pixel de conversão</h3>
+      <div class="cards-container pixel">
+        <div class="card facebook"></div>
+        <div class="card google"></div>
+        <div class="card analytics"></div>
+        <div class="card tiktok"></div>
+        <div class="card pinterest"></div>
+        <div class="card kwai"></div>
+        <div class="card taboola"></div>
+        <div class="card uol_ads"></div>
+        <div class="card outbrain"></div>
+      </div>
     </div>
 
     <div class="carousel">
       <h3>Gateways de pagamento</h3>
+      <div class="cards-container gateways">
+        <div class="card appmax"></div>
+        <div class="card getnet"></div>
+        <div class="card iugu"></div>
+        <div class="card asaas"></div>
+        <div class="card mercado_pago"></div>
+        <div class="card pagarme"></div>
+        <div class="card abmex"></div>
+        <div class="card zoutipay"></div>
+      </div>
     </div>
 
     <div class="landing">
@@ -190,13 +219,13 @@ title: Vega Checkout
 
     <div class="plans">
       <div class="tabs">
-        <button type="button" class="active">Mensal</button>
-        <button type="button">Anual <em>15% desc.</em></button>
+        <button type="button" class="bt-mensal active">Mensal</button>
+        <button type="button" class="bt-anual">Anual <em>15% desc.</em></button>
       </div>
 
       <!-- Recorrencia mensal -->
       <div class="cards-container mensal active">
-        <div class="basic">
+        <div class="card basic">
           <strong>Basic</strong>
           <p>Gratuito e completo: ideal para quem está começando</p>
           <em>Grátis</em>
@@ -207,7 +236,7 @@ title: Vega Checkout
           <a href="#" title="Começar">Começar</a>
         </div>
 
-        <div class="business">
+        <div class="card business">
           <strong>Business</strong>
           <p>Taxas menores para impulsionar o seu <br>negócio</p>
           <em>R$147<sub>,00</sub></em>
@@ -218,7 +247,7 @@ title: Vega Checkout
           <a href="#" title="Começar">Começar</a>
         </div>
 
-        <div class="professional">
+        <div class="card professional">
           <strong>Professional</strong>
           <p>Taxas imbatíveis para negócios de alto desempenho</p>
           <em>R$497<sub>,00</sub></em>
@@ -232,7 +261,7 @@ title: Vega Checkout
 
       <!-- Recorrencia anual -->
       <div class="cards-container anual">
-        <div class="basic">
+        <div class="card basic">
           <strong>Basic</strong>
           <p>Gratuito e completo: ideal para quem está começando</p>
           <em>Grátis</em>
@@ -243,7 +272,7 @@ title: Vega Checkout
           <a href="#" title="Começar">Começar</a>
         </div>
 
-        <div class="business">
+        <div class="card business">
           <strong>Business</strong>
           <p>Taxas menores para impulsionar o seu <br>negócio</p>
           <em><sub>12x</sub>R$124<sub>,95</sub></em>
@@ -254,7 +283,7 @@ title: Vega Checkout
           <a href="#" title="Começar">Começar</a>
         </div>
 
-        <div class="professional">
+        <div class="card professional">
           <strong>Professional</strong>
           <p>Taxas imbatíveis para negócios de alto desempenho</p>
           <em><sub>12x</sub>R$422<sub>,45</sub></em>
