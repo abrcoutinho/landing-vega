@@ -48,33 +48,6 @@ butter.init({
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Show elements on scroll
 const animateHTML = function() {
   let elems, windowHeight;
@@ -105,89 +78,17 @@ animateHTML().init()
 
 
 
-// Contact window
-// const contactWindow = document.querySelector('#contact-form');
-// const contactForm = document.querySelector('#contact-form form');
-// const btContactFooter = document.querySelector('#footer article:first-of-type button');
-// const btCloseContact = document.querySelector('#contact-form > button');
-
-// const btPlanLite = document.querySelector('#bt-plan-lite');
-// const btPlanEnterprise = document.querySelector('#bt-plan-enterprise');
-
-// btContactFooter.addEventListener('click', function() {
-//   contactWindow.classList.add('visible');
-// });
-
-// if (btPlanLite) {
-//   btPlanLite.addEventListener('click', function() {
-//     contactWindow.classList.add('visible');
-//   });
-// }
-// if (btPlanEnterprise) {
-//   btPlanEnterprise.addEventListener('click', function() {
-//     contactWindow.classList.add('visible');
-//   });
-// }
-
-// btCloseContact.addEventListener('click', function() {
-//   contactWindow.classList.remove('visible');
-// });
-
-
-// Contact form feedback
-// msgConfirmation = document.querySelector('#contact-form aside')
-// const btMsg = document.querySelector('#contact-form aside button');
-
-// btMsg.addEventListener('click', function() {
-//   msgConfirmation.classList.remove('show');
-//   contactWindow.classList.remove('visible');
-// });
-
-
-
-
 
 // jQuery scripts
 $(document).ready(function(){
 
   // Newsletter feedback
-  // $("#contact-form form").on("submit", function(event) {
-  //   event.preventDefault();
- 
-  //   var form = $(this);
-  //   var url = form.attr('action');
-  //   var data = form.serializeArray();
-
-  //   var dataObject = {};
-  //   for (var i = 0; i < data.length; i++){
-  //     dataObject[data[i]['name']] = data[i]['value'];
-  //   }
-
-  //   $.ajax({
-  //     url: url,
-  //     data: dataObject,
-  //     method: "POST",
-  //   }).fail(function(response) {
-  //     if (response.status === 0) {
-  //       $('#contact-form aside').addClass('show');
-  //       $('#contact-form').animate({scrollTop: 0}, 'slow');
-  //       $(".txtarea").val('');
-  //     } else {
-  //       alert("Something went wrong. Please try again later.");
-  //     }
-  //   });
-  // });
-
-
-
   $(".newsletter form").on("submit", function(event) {
     event.preventDefault();
-
-    alert("E-mail recebido com sucesso");
-
+    $("#newsletter").val('');
+    $('.newsletter .mail').hide();
+    $('.newsletter .feedback').fadeIn();
   });
-
-
 
 
   // Show/hide mobile menu
@@ -273,7 +174,7 @@ $(document).ready(function(){
     // mobileFirst: true,
     responsive: [
       {
-        breakpoint: 599,
+        breakpoint: 1999,
         settings: {
           infinite: false,
           autoplay: false,
