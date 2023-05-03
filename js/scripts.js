@@ -180,13 +180,15 @@ $(document).ready(function(){
 
 
   // Show/hide mobile menu
-  // $('#header button').click(function() {
-  //   $(this).toggleClass('opened');
-  //   $('#header').toggleClass('mobile-menu');
-  // });
-  // $('#header a').click(function() {
-  //   $('#header').removeClass('mobile-menu');
-  // });
+  $('.vega > .header .menu-mobile-button').click(function() {
+    $('.menu-mobile').addClass('active');
+  });
+  $('.menu-mobile .close').click(function() {
+    $('.menu-mobile').removeClass('active');
+  });
+  $('.menu-mobile .menu a').click(function() {
+    $('.menu-mobile').removeClass('active');
+  });
 
 
   // Tab plans

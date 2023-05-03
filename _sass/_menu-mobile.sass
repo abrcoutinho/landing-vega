@@ -1,0 +1,116 @@
+// Menu mobile
+.menu-mobile
+	// display: none
+	transform: translateX(50vw)
+	opacity: 0.5
+	visibility: hidden
+
+	&.active
+		// display: block
+		transition: transform 0.3s $ease, opacity 0.3s $ease
+		transform: translateX(0)
+		opacity: 1
+		visibility: visible
+
+	.sign-up
+		a
+			@extend %button
+			color: white
+
+			&:last-child
+				background-color: white
+				color: $brand-secondary
+				margin-top: 24px
+
+
+@include for-size(phone-only)
+
+	.menu-mobile
+		width: 100vw
+		height: 100vh
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 10
+		background-color: $neutral_80
+
+		header
+			width: 100vw
+			height: 100px
+			box-sizing: border-box
+			padding: 0 5vw
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			img
+				height: 48px
+				width: auto
+
+			strong
+				font-size: 6vw
+				color: white
+				font-weight: 400
+				transform: translateX(-16vw)
+
+			button
+				width: 48px
+				height: 48px
+				background: url("../img/close.svg") no-repeat 50% 50%
+
+
+		.menu
+			margin-top: 10vw
+			padding-left: 20vw
+			border-bottom: solid 1px rgba(256, 256, 256, 0.2)
+
+			a
+				color: white
+				display: block
+				height: 56px
+				font-size: 7vw
+				font-weight: 600
+				margin-bottom: 5vw
+
+		.sign-up
+			padding: 10vw 0 10vw 20vw
+			border-bottom: solid 1px rgba(256, 256, 256, 0.2)
+
+
+
+		.social
+			flex: 1 1 0
+			display: flex
+			justify-content: center
+			gap: 32px
+			position: relative
+			margin: 40px 0
+
+			li
+				flex: 0 1 40px
+				display: flex
+
+			a
+				align-self: flex-end
+				display: block
+				width: 40px
+				height: 40px
+				overflow: hidden
+				text-indent: -999px
+				opacity: 0.5
+				background:
+					repeat: no-repeat
+					size: 100% auto
+					position: 0 0
+
+				$social_list: facebook instagram youtube
+				@each $social in $social_list
+					&.#{$social}
+						background-image: url(../img/#{$social}.svg)
+
+
+		& > small
+			display: block
+			color: white
+			text-align: center
+			opacity: 0.6
