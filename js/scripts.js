@@ -150,7 +150,7 @@ animateHTML().init()
 // jQuery scripts
 $(document).ready(function(){
 
-  // Contact form feedback
+  // Newsletter feedback
   // $("#contact-form form").on("submit", function(event) {
   //   event.preventDefault();
  
@@ -177,6 +177,17 @@ $(document).ready(function(){
   //     }
   //   });
   // });
+
+
+
+  $(".newsletter form").on("submit", function(event) {
+    event.preventDefault();
+
+    alert("E-mail recebido com sucesso");
+
+  });
+
+
 
 
   // Show/hide mobile menu
