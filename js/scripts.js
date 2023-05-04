@@ -39,11 +39,11 @@ let scroll = new SmoothScroll('a[href*="#"]', {
 
 
 // ButterJS scroll momentum
-butter.init({
-  wrapperId: 'butter',
-  wrapperDamper: 0.03,//0.08 default
-  cancelOnTouch: true
-});
+// butter.init({
+//   wrapperId: 'butter',
+//   wrapperDamper: 0.03,//0.08 default
+//   cancelOnTouch: true
+// });
 
 
 
@@ -174,7 +174,7 @@ $(document).ready(function(){
     // mobileFirst: true,
     responsive: [
       {
-        breakpoint: 1999,
+        breakpoint: 1199,
         settings: {
           infinite: false,
           autoplay: false,

@@ -3,6 +3,9 @@
 	z-index: -10
 	opacity: 0
 	visibility: hidden
+	position: fixed
+	top: 0
+	left: 0
 
 	&.active
 		z-index: 10
@@ -31,7 +34,6 @@
 				&:nth-child(2)
 					transition-delay: 0.55s
 
-
 	.sign-up
 		a
 			@extend %button
@@ -48,9 +50,6 @@
 	.menu-mobile
 		width: 100vw
 		height: 100vh
-		position: fixed
-		top: 0
-		left: 0
 		z-index: 10
 		background-color: $neutral_80
 

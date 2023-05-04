@@ -4,9 +4,28 @@
 	height: 950px
 	background:
 		image: url("../img/browser.svg")
-		rpeat: no-repeat
-		position: center top
+		repeat: no-repeat
+		position: center -20px
 	position: relative
+	display: flex
+	justify-content: center
+	overflow: hidden
+
+	iframe
+		width: 1008px
+		height: 653px
+		margin-top: 40px
+		padding: 0 6px 16px
+		box-sizing: border-box
+		border-radius: 12px
+		overflow: auto
+		-ms-overflow-style: none // IE and Edge
+		scrollbar-width: none // Firefox
+
+		&::-webkit-scrollbar
+			display: none
+			width: 0 !important
+
 
 	& > a
 		@extend %button
